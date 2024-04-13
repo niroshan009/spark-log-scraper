@@ -1,0 +1,246 @@
+/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=51007:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8 -classpath /Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/ext/jaccess.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/ext/legacy8ujsse.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/ext/openjsse.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/rt.jar:/Users/kd/git/spark/log-scraper/target/classes:/Users/kd/.m2/repository/org/apache/spark/spark-core_2.13/3.3.2/spark-core_2.13-3.3.2.jar:/Users/kd/.m2/repository/org/scala-lang/modules/scala-parallel-collections_2.13/1.0.3/scala-parallel-collections_2.13-1.0.3.jar:/Users/kd/.m2/repository/org/apache/avro/avro/1.11.0/avro-1.11.0.jar:/Users/kd/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.5/jackson-core-2.12.5.jar:/Users/kd/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/kd/.m2/repository/org/apache/avro/avro-mapred/1.11.0/avro-mapred-1.11.0.jar:/Users/kd/.m2/repository/org/apache/avro/avro-ipc/1.11.0/avro-ipc-1.11.0.jar:/Users/kd/.m2/repository/org/tukaani/xz/1.9/xz-1.9.jar:/Users/kd/.m2/repository/com/twitter/chill_2.13/0.10.0/chill_2.13-0.10.0.jar:/Users/kd/.m2/repository/com/esotericsoftware/kryo-shaded/4.0.2/kryo-shaded-4.0.2.jar:/Users/kd/.m2/repository/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar:/Users/kd/.m2/repository/org/objenesis/objenesis/2.5.1/objenesis-2.5.1.jar:/Users/kd/.m2/repository/com/twitter/chill-java/0.10.0/chill-java-0.10.0.jar:/Users/kd/.m2/repository/org/apache/xbean/xbean-asm9-shaded/4.20/xbean-asm9-shaded-4.20.jar:/Users/kd/.m2/repository/org/apache/hadoop/hadoop-client-api/3.3.2/hadoop-client-api-3.3.2.jar:/Users/kd/.m2/repository/org/apache/hadoop/hadoop-client-runtime/3.3.2/hadoop-client-runtime-3.3.2.jar:/Users/kd/.m2/repository/org/apache/spark/spark-launcher_2.13/3.3.2/spark-launcher_2.13-3.3.2.jar:/Users/kd/.m2/repository/org/apache/spark/spark-kvstore_2.13/3.3.2/spark-kvstore_2.13-3.3.2.jar:/Users/kd/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.4/jackson-annotations-2.13.4.jar:/Users/kd/.m2/repository/org/apache/spark/spark-network-common_2.13/3.3.2/spark-network-common_2.13-3.3.2.jar:/Users/kd/.m2/repository/com/google/crypto/tink/tink/1.6.1/tink-1.6.1.jar:/Users/kd/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/kd/.m2/repository/org/apache/spark/spark-network-shuffle_2.13/3.3.2/spark-network-shuffle_2.13-3.3.2.jar:/Users/kd/.m2/repository/org/apache/spark/spark-unsafe_2.13/3.3.2/spark-unsafe_2.13-3.3.2.jar:/Users/kd/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/Users/kd/.m2/repository/org/apache/curator/curator-recipes/2.13.0/curator-recipes-2.13.0.jar:/Users/kd/.m2/repository/org/apache/curator/curator-framework/2.13.0/curator-framework-2.13.0.jar:/Users/kd/.m2/repository/org/apache/curator/curator-client/2.13.0/curator-client-2.13.0.jar:/Users/kd/.m2/repository/com/google/guava/guava/16.0.1/guava-16.0.1.jar:/Users/kd/.m2/repository/org/apache/zookeeper/zookeeper/3.6.2/zookeeper-3.6.2.jar:/Users/kd/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/kd/.m2/repository/org/apache/zookeeper/zookeeper-jute/3.6.2/zookeeper-jute-3.6.2.jar:/Users/kd/.m2/repository/org/apache/yetus/audience-annotations/0.5.0/audience-annotations-0.5.0.jar:/Users/kd/.m2/repository/jakarta/servlet/jakarta.servlet-api/4.0.3/jakarta.servlet-api-4.0.3.jar:/Users/kd/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/Users/kd/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/kd/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/kd/.m2/repository/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0.jar:/Users/kd/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/kd/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/kd/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/kd/.m2/repository/com/google/code/findbugs/jsr305/3.0.0/jsr305-3.0.0.jar:/Users/kd/.m2/repository/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar:/Users/kd/.m2/repository/org/slf4j/jul-to-slf4j/1.7.32/jul-to-slf4j-1.7.32.jar:/Users/kd/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.32/jcl-over-slf4j-1.7.32.jar:/Users/kd/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.17.2/log4j-slf4j-impl-2.17.2.jar:/Users/kd/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.2/log4j-api-2.17.2.jar:/Users/kd/.m2/repository/org/apache/logging/log4j/log4j-core/2.17.2/log4j-core-2.17.2.jar:/Users/kd/.m2/repository/org/apache/logging/log4j/log4j-1.2-api/2.17.2/log4j-1.2-api-2.17.2.jar:/Users/kd/.m2/repository/com/ning/compress-lzf/1.1/compress-lzf-1.1.jar:/Users/kd/.m2/repository/org/xerial/snappy/snappy-java/1.1.8.4/snappy-java-1.1.8.4.jar:/Users/kd/.m2/repository/org/lz4/lz4-java/1.8.0/lz4-java-1.8.0.jar:/Users/kd/.m2/repository/com/github/luben/zstd-jni/1.5.2-1/zstd-jni-1.5.2-1.jar:/Users/kd/.m2/repository/org/roaringbitmap/RoaringBitmap/0.9.25/RoaringBitmap-0.9.25.jar:/Users/kd/.m2/repository/org/roaringbitmap/shims/0.9.25/shims-0.9.25.jar:/Users/kd/.m2/repository/org/scala-lang/modules/scala-xml_2.13/1.2.0/scala-xml_2.13-1.2.0.jar:/Users/kd/.m2/repository/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8.jar:/Users/kd/.m2/repository/org/scala-lang/scala-reflect/2.13.8/scala-reflect-2.13.8.jar:/Users/kd/.m2/repository/org/json4s/json4s-jackson_2.13/3.7.0-M11/json4s-jackson_2.13-3.7.0-M11.jar:/Users/kd/.m2/repository/org/json4s/json4s-core_2.13/3.7.0-M11/json4s-core_2.13-3.7.0-M11.jar:/Users/kd/.m2/repository/org/json4s/json4s-ast_2.13/3.7.0-M11/json4s-ast_2.13-3.7.0-M11.jar:/Users/kd/.m2/repository/org/json4s/json4s-scalap_2.13/3.7.0-M11/json4s-scalap_2.13-3.7.0-M11.jar:/Users/kd/.m2/repository/org/glassfish/jersey/core/jersey-client/2.36/jersey-client-2.36.jar:/Users/kd/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar:/Users/kd/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar:/Users/kd/.m2/repository/org/glassfish/jersey/core/jersey-common/2.36/jersey-common-2.36.jar:/Users/kd/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/Users/kd/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/Users/kd/.m2/repository/org/glassfish/jersey/core/jersey-server/2.36/jersey-server-2.36.jar:/Users/kd/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/Users/kd/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet/2.36/jersey-container-servlet-2.36.jar:/Users/kd/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/2.36/jersey-container-servlet-core-2.36.jar:/Users/kd/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.36/jersey-hk2-2.36.jar:/Users/kd/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar:/Users/kd/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar:/Users/kd/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar:/Users/kd/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar:/Users/kd/.m2/repository/org/javassist/javassist/3.25.0-GA/javassist-3.25.0-GA.jar:/Users/kd/.m2/repository/io/netty/netty-all/4.1.74.Final/netty-all-4.1.74.Final.jar:/Users/kd/.m2/repository/io/netty/netty-buffer/4.1.74.Final/netty-buffer-4.1.74.Final.jar:/Users/kd/.m2/repository/io/netty/netty-codec/4.1.74.Final/netty-codec-4.1.74.Final.jar:/Users/kd/.m2/repository/io/netty/netty-common/4.1.74.Final/netty-common-4.1.74.Final.jar:/Users/kd/.m2/repository/io/netty/netty-handler/4.1.74.Final/netty-handler-4.1.74.Final.jar:/Users/kd/.m2/repository/io/netty/netty-tcnative-classes/2.0.48.Final/netty-tcnative-classes-2.0.48.Final.jar:/Users/kd/.m2/repository/io/netty/netty-resolver/4.1.74.Final/netty-resolver-4.1.74.Final.jar:/Users/kd/.m2/repository/io/netty/netty-transport/4.1.74.Final/netty-transport-4.1.74.Final.jar:/Users/kd/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.74.Final/netty-transport-classes-epoll-4.1.74.Final.jar:/Users/kd/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.74.Final/netty-transport-native-unix-common-4.1.74.Final.jar:/Users/kd/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.74.Final/netty-transport-classes-kqueue-4.1.74.Final.jar:/Users/kd/.m2/repository/io/netty/netty-transport-native-epoll/4.1.74.Final/netty-transport-native-epoll-4.1.74.Final-linux-x86_64.jar:/Users/kd/.m2/repository/io/netty/netty-transport-native-epoll/4.1.74.Final/netty-transport-native-epoll-4.1.74.Final-linux-aarch_64.jar:/Users/kd/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.74.Final/netty-transport-native-kqueue-4.1.74.Final-osx-x86_64.jar:/Users/kd/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.74.Final/netty-transport-native-kqueue-4.1.74.Final-osx-aarch_64.jar:/Users/kd/.m2/repository/com/clearspring/analytics/stream/2.9.6/stream-2.9.6.jar:/Users/kd/.m2/repository/io/dropwizard/metrics/metrics-core/4.2.7/metrics-core-4.2.7.jar:/Users/kd/.m2/repository/io/dropwizard/metrics/metrics-jvm/4.2.7/metrics-jvm-4.2.7.jar:/Users/kd/.m2/repository/io/dropwizard/metrics/metrics-json/4.2.7/metrics-json-4.2.7.jar:/Users/kd/.m2/repository/io/dropwizard/metrics/metrics-graphite/4.2.7/metrics-graphite-4.2.7.jar:/Users/kd/.m2/repository/io/dropwizard/metrics/metrics-jmx/4.2.7/metrics-jmx-4.2.7.jar:/Users/kd/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.4.2/jackson-databind-2.13.4.2.jar:/Users/kd/.m2/repository/com/fasterxml/jackson/module/jackson-module-scala_2.13/2.13.4/jackson-module-scala_2.13-2.13.4.jar:/Users/kd/.m2/repository/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar:/Users/kd/.m2/repository/org/apache/ivy/ivy/2.5.1/ivy-2.5.1.jar:/Users/kd/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar:/Users/kd/.m2/repository/net/razorvine/pickle/1.2/pickle-1.2.jar:/Users/kd/.m2/repository/net/sf/py4j/py4j/0.10.9.5/py4j-0.10.9.5.jar:/Users/kd/.m2/repository/org/apache/spark/spark-tags_2.13/3.3.2/spark-tags_2.13-3.3.2.jar:/Users/kd/.m2/repository/org/apache/commons/commons-crypto/1.1.0/commons-crypto-1.1.0.jar:/Users/kd/.m2/repository/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar:/Users/kd/.m2/repository/org/apache/spark/spark-sql_2.13/3.3.2/spark-sql_2.13-3.3.2.jar:/Users/kd/.m2/repository/org/rocksdb/rocksdbjni/6.20.3/rocksdbjni-6.20.3.jar:/Users/kd/.m2/repository/com/univocity/univocity-parsers/2.9.1/univocity-parsers-2.9.1.jar:/Users/kd/.m2/repository/org/apache/spark/spark-sketch_2.13/3.3.2/spark-sketch_2.13-3.3.2.jar:/Users/kd/.m2/repository/org/apache/spark/spark-catalyst_2.13/3.3.2/spark-catalyst_2.13-3.3.2.jar:/Users/kd/.m2/repository/org/codehaus/janino/janino/3.0.16/janino-3.0.16.jar:/Users/kd/.m2/repository/org/codehaus/janino/commons-compiler/3.0.16/commons-compiler-3.0.16.jar:/Users/kd/.m2/repository/org/antlr/antlr4-runtime/4.8/antlr4-runtime-4.8.jar:/Users/kd/.m2/repository/org/apache/arrow/arrow-vector/7.0.0/arrow-vector-7.0.0.jar:/Users/kd/.m2/repository/org/apache/arrow/arrow-format/7.0.0/arrow-format-7.0.0.jar:/Users/kd/.m2/repository/org/apache/arrow/arrow-memory-core/7.0.0/arrow-memory-core-7.0.0.jar:/Users/kd/.m2/repository/com/google/flatbuffers/flatbuffers-java/1.12.0/flatbuffers-java-1.12.0.jar:/Users/kd/.m2/repository/org/apache/arrow/arrow-memory-netty/7.0.0/arrow-memory-netty-7.0.0.jar:/Users/kd/.m2/repository/org/apache/orc/orc-core/1.7.8/orc-core-1.7.8.jar:/Users/kd/.m2/repository/org/apache/orc/orc-shims/1.7.8/orc-shims-1.7.8.jar:/Users/kd/.m2/repository/io/airlift/aircompressor/0.21/aircompressor-0.21.jar:/Users/kd/.m2/repository/org/jetbrains/annotations/17.0.0/annotations-17.0.0.jar:/Users/kd/.m2/repository/org/threeten/threeten-extra/1.5.0/threeten-extra-1.5.0.jar:/Users/kd/.m2/repository/org/apache/orc/orc-mapreduce/1.7.8/orc-mapreduce-1.7.8.jar:/Users/kd/.m2/repository/org/apache/hive/hive-storage-api/2.7.2/hive-storage-api-2.7.2.jar:/Users/kd/.m2/repository/org/apache/parquet/parquet-column/1.12.2/parquet-column-1.12.2.jar:/Users/kd/.m2/repository/org/apache/parquet/parquet-common/1.12.2/parquet-common-1.12.2.jar:/Users/kd/.m2/repository/org/apache/parquet/parquet-encoding/1.12.2/parquet-encoding-1.12.2.jar:/Users/kd/.m2/repository/org/apache/parquet/parquet-hadoop/1.12.2/parquet-hadoop-1.12.2.jar:/Users/kd/.m2/repository/org/apache/parquet/parquet-format-structures/1.12.2/parquet-format-structures-1.12.2.jar:/Users/kd/.m2/repository/org/apache/parquet/parquet-jackson/1.12.2/parquet-jackson-1.12.2.jar:/Users/kd/.m2/repository/org/apache/spark/spark-mllib_2.13/3.3.2/spark-mllib_2.13-3.3.2.jar:/Users/kd/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.13/1.1.2/scala-parser-combinators_2.13-1.1.2.jar:/Users/kd/.m2/repository/org/apache/spark/spark-streaming_2.13/3.3.2/spark-streaming_2.13-3.3.2.jar:/Users/kd/.m2/repository/org/apache/spark/spark-graphx_2.13/3.3.2/spark-graphx_2.13-3.3.2.jar:/Users/kd/.m2/repository/net/sourceforge/f2j/arpack_combined_all/0.1/arpack_combined_all-0.1.jar:/Users/kd/.m2/repository/org/apache/spark/spark-mllib-local_2.13/3.3.2/spark-mllib-local_2.13-3.3.2.jar:/Users/kd/.m2/repository/org/scalanlp/breeze_2.13/1.2/breeze_2.13-1.2.jar:/Users/kd/.m2/repository/org/scalanlp/breeze-macros_2.13/1.2/breeze-macros_2.13-1.2.jar:/Users/kd/.m2/repository/com/github/fommil/netlib/core/1.1.2/core-1.1.2.jar:/Users/kd/.m2/repository/net/sf/opencsv/opencsv/2.3/opencsv-2.3.jar:/Users/kd/.m2/repository/com/github/wendykierp/JTransforms/3.1/JTransforms-3.1.jar:/Users/kd/.m2/repository/pl/edu/icm/JLargeArrays/1.5/JLargeArrays-1.5.jar:/Users/kd/.m2/repository/com/chuusai/shapeless_2.13/2.3.3/shapeless_2.13-2.3.3.jar:/Users/kd/.m2/repository/org/typelevel/spire_2.13/0.17.0/spire_2.13-0.17.0.jar:/Users/kd/.m2/repository/org/typelevel/spire-macros_2.13/0.17.0/spire-macros_2.13-0.17.0.jar:/Users/kd/.m2/repository/org/typelevel/spire-platform_2.13/0.17.0/spire-platform_2.13-0.17.0.jar:/Users/kd/.m2/repository/org/typelevel/spire-util_2.13/0.17.0/spire-util_2.13-0.17.0.jar:/Users/kd/.m2/repository/org/typelevel/algebra_2.13/2.0.1/algebra_2.13-2.0.1.jar:/Users/kd/.m2/repository/org/typelevel/cats-kernel_2.13/2.1.1/cats-kernel_2.13-2.1.1.jar:/Users/kd/.m2/repository/org/scala-lang/modules/scala-collection-compat_2.13/2.1.1/scala-collection-compat_2.13-2.1.1.jar:/Users/kd/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar:/Users/kd/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2.jar:/Users/kd/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.8/istack-commons-runtime-3.0.8.jar:/Users/kd/.m2/repository/dev/ludovic/netlib/blas/2.2.1/blas-2.2.1.jar:/Users/kd/.m2/repository/dev/ludovic/netlib/lapack/2.2.1/lapack-2.2.1.jar:/Users/kd/.m2/repository/dev/ludovic/netlib/arpack/2.2.1/arpack-2.2.1.jar:/Users/kd/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/Users/kd/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/Users/kd/.m2/repository/org/fusesource/leveldbjni/leveldbjni-all/1.8/leveldbjni-all-1.8.jar org.kd.log.Main
+Hello world!
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+24/04/10 23:55:57 INFO SparkContext: Running Spark version 3.3.2
+24/04/10 23:55:57 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/04/10 23:55:57 INFO ResourceUtils: ==============================================================
+24/04/10 23:55:57 INFO ResourceUtils: No custom resources configured for spark.driver.
+24/04/10 23:55:57 INFO ResourceUtils: ==============================================================
+24/04/10 23:55:57 INFO SparkContext: Submitted application: Gym Competitor
+24/04/10 23:55:57 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+24/04/10 23:55:57 INFO ResourceProfile: Limiting resource is cpu
+24/04/10 23:55:57 INFO ResourceProfileManager: Added ResourceProfile id: 0
+24/04/10 23:55:57 INFO SecurityManager: Changing view acls to: kd
+24/04/10 23:55:57 INFO SecurityManager: Changing modify acls to: kd
+24/04/10 23:55:57 INFO SecurityManager: Changing view acls groups to:
+24/04/10 23:55:57 INFO SecurityManager: Changing modify acls groups to:
+24/04/10 23:55:57 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(kd); groups with view permissions: Set(); users  with modify permissions: Set(kd); groups with modify permissions: Set()
+24/04/10 23:55:58 INFO Utils: Successfully started service 'sparkDriver' on port 51010.
+24/04/10 23:55:58 INFO SparkEnv: Registering MapOutputTracker
+24/04/10 23:55:58 INFO SparkEnv: Registering BlockManagerMaster
+24/04/10 23:55:58 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+24/04/10 23:55:58 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+24/04/10 23:55:58 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+24/04/10 23:55:58 INFO DiskBlockManager: Created local directory at /private/var/folders/5s/ftwr_7g946qftss3qrkmfnlc0000gn/T/blockmgr-787c3167-dd38-46dd-bbc2-84cb7393aa3d
+24/04/10 23:55:58 INFO MemoryStore: MemoryStore started with capacity 2004.6 MiB
+24/04/10 23:55:58 INFO SparkEnv: Registering OutputCommitCoordinator
+24/04/10 23:55:58 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+24/04/10 23:55:58 INFO Executor: Starting executor ID driver on host 192.168.1.7
+24/04/10 23:55:58 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+24/04/10 23:55:58 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 51011.
+24/04/10 23:55:58 INFO NettyBlockTransferService: Server created on 192.168.1.7:51011
+24/04/10 23:55:58 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/04/10 23:55:58 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 192.168.1.7, 51011, None)
+24/04/10 23:55:58 INFO BlockManagerMasterEndpoint: Registering block manager 192.168.1.7:51011 with 2004.6 MiB RAM, BlockManagerId(driver, 192.168.1.7, 51011, None)
+24/04/10 23:55:58 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 192.168.1.7, 51011, None)
+24/04/10 23:55:58 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 192.168.1.7, 51011, None)
+24/04/10 23:55:58 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+24/04/10 23:55:58 INFO SharedState: Warehouse path is 'file:/Users/kd/git/spark/log-scraper/spark-warehouse'.
+24/04/10 23:55:59 INFO InMemoryFileIndex: It took 16 ms to list leaf files for 1 paths.
+24/04/10 23:55:59 INFO InMemoryFileIndex: It took 1 ms to list leaf files for 1 paths.
+24/04/10 23:56:00 INFO FileSourceStrategy: Pushed Filters:
+24/04/10 23:56:00 INFO FileSourceStrategy: Post-Scan Filters: (length(trim(value#0, None)) > 0)
+24/04/10 23:56:00 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+24/04/10 23:56:01 INFO CodeGenerator: Code generated in 178.034125 ms
+24/04/10 23:56:01 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 348.9 KiB, free 2004.3 MiB)
+24/04/10 23:56:01 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 33.7 KiB, free 2004.2 MiB)
+24/04/10 23:56:01 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 192.168.1.7:51011 (size: 33.7 KiB, free: 2004.6 MiB)
+24/04/10 23:56:01 INFO SparkContext: Created broadcast 0 from csv at Main.java:24
+24/04/10 23:56:01 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+24/04/10 23:56:01 INFO SparkContext: Starting job: csv at Main.java:24
+24/04/10 23:56:01 INFO DAGScheduler: Got job 0 (csv at Main.java:24) with 1 output partitions
+24/04/10 23:56:01 INFO DAGScheduler: Final stage: ResultStage 0 (csv at Main.java:24)
+24/04/10 23:56:01 INFO DAGScheduler: Parents of final stage: List()
+24/04/10 23:56:01 INFO DAGScheduler: Missing parents: List()
+24/04/10 23:56:01 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[3] at csv at Main.java:24), which has no missing parents
+24/04/10 23:56:01 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 12.0 KiB, free 2004.2 MiB)
+24/04/10 23:56:01 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 5.9 KiB, free 2004.2 MiB)
+24/04/10 23:56:01 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 192.168.1.7:51011 (size: 5.9 KiB, free: 2004.6 MiB)
+24/04/10 23:56:01 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1513
+24/04/10 23:56:01 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[3] at csv at Main.java:24) (first 15 tasks are for partitions Vector(0))
+24/04/10 23:56:01 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+24/04/10 23:56:01 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (192.168.1.7, executor driver, partition 0, PROCESS_LOCAL, 7888 bytes) taskResourceAssignments Map()
+24/04/10 23:56:01 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+24/04/10 23:56:01 INFO FileScanRDD: Reading File path: file:///Users/kd/git/spark/log-scraper/src/main/resources/inputfile.csv, range: 0-690, partition values: [empty row]
+24/04/10 23:56:01 INFO CodeGenerator: Code generated in 7.184458 ms
+24/04/10 23:56:01 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1623 bytes result sent to driver
+24/04/10 23:56:01 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 229 ms on 192.168.1.7 (executor driver) (1/1)
+24/04/10 23:56:01 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool
+24/04/10 23:56:01 INFO DAGScheduler: ResultStage 0 (csv at Main.java:24) finished in 0.305 s
+24/04/10 23:56:01 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+24/04/10 23:56:01 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+24/04/10 23:56:01 INFO DAGScheduler: Job 0 finished: csv at Main.java:24, took 0.343844 s
+24/04/10 23:56:01 INFO CodeGenerator: Code generated in 6.624833 ms
+24/04/10 23:56:01 INFO FileSourceStrategy: Pushed Filters:
+24/04/10 23:56:01 INFO FileSourceStrategy: Post-Scan Filters:
+24/04/10 23:56:01 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+24/04/10 23:56:01 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 348.9 KiB, free 2003.9 MiB)
+24/04/10 23:56:01 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 33.7 KiB, free 2003.8 MiB)
+24/04/10 23:56:01 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 192.168.1.7:51011 (size: 33.7 KiB, free: 2004.5 MiB)
+24/04/10 23:56:01 INFO SparkContext: Created broadcast 2 from csv at Main.java:24
+24/04/10 23:56:01 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+24/04/10 23:56:01 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 192.168.1.7:51011 in memory (size: 5.9 KiB, free: 2004.5 MiB)
+24/04/10 23:56:01 INFO FileSourceStrategy: Pushed Filters:
+24/04/10 23:56:01 INFO FileSourceStrategy: Post-Scan Filters:
+24/04/10 23:56:01 INFO FileSourceStrategy: Output Data Schema: struct<Item: string, Date: string>
+24/04/10 23:56:01 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 348.7 KiB, free 2003.5 MiB)
+24/04/10 23:56:01 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 33.7 KiB, free 2003.5 MiB)
+24/04/10 23:56:01 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 192.168.1.7:51011 (size: 33.7 KiB, free: 2004.5 MiB)
+24/04/10 23:56:01 INFO SparkContext: Created broadcast 3 from show at Main.java:25
+24/04/10 23:56:01 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+24/04/10 23:56:01 INFO SparkContext: Starting job: show at Main.java:25
+24/04/10 23:56:01 INFO DAGScheduler: Got job 1 (show at Main.java:25) with 1 output partitions
+24/04/10 23:56:01 INFO DAGScheduler: Final stage: ResultStage 1 (show at Main.java:25)
+24/04/10 23:56:01 INFO DAGScheduler: Parents of final stage: List()
+24/04/10 23:56:01 INFO DAGScheduler: Missing parents: List()
+24/04/10 23:56:01 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[12] at show at Main.java:25), which has no missing parents
+24/04/10 23:56:01 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 10.5 KiB, free 2003.5 MiB)
+24/04/10 23:56:01 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 5.7 KiB, free 2003.5 MiB)
+24/04/10 23:56:01 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 192.168.1.7:51011 (size: 5.7 KiB, free: 2004.5 MiB)
+24/04/10 23:56:01 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1513
+24/04/10 23:56:01 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[12] at show at Main.java:25) (first 15 tasks are for partitions Vector(0))
+24/04/10 23:56:01 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks resource profile 0
+24/04/10 23:56:01 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (192.168.1.7, executor driver, partition 0, PROCESS_LOCAL, 7888 bytes) taskResourceAssignments Map()
+24/04/10 23:56:01 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+24/04/10 23:56:01 INFO FileScanRDD: Reading File path: file:///Users/kd/git/spark/log-scraper/src/main/resources/inputfile.csv, range: 0-690, partition values: [empty row]
+24/04/10 23:56:01 INFO CodeGenerator: Code generated in 6.227333 ms
+24/04/10 23:56:01 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 1839 bytes result sent to driver
+24/04/10 23:56:01 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 29 ms on 192.168.1.7 (executor driver) (1/1)
+24/04/10 23:56:01 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool
+24/04/10 23:56:01 INFO DAGScheduler: ResultStage 1 (show at Main.java:25) finished in 0.036 s
+24/04/10 23:56:01 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+24/04/10 23:56:01 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+24/04/10 23:56:01 INFO DAGScheduler: Job 1 finished: show at Main.java:25, took 0.037615 s
+24/04/10 23:56:01 INFO CodeGenerator: Code generated in 8.623208 ms
+24/04/10 23:56:02 INFO DAGScheduler: XYZ_DATASET: {Item}
++-------------------+------------+
+|Item               |Date        |
++-------------------+------------+
+|A3250050J2015-04-17|11:29:49.544|
+|B4560050Y2015-04-17|11:39:49.564|
+|C2300040L2015-04-17|12:29:49.564|
+|A1230050M2015-04-17|11:10:49.564|
+|A4760060N2015-04-17|11:26:49.564|
+|B5880050W2015-04-17|12:29:49.564|
+|B3230070R2015-04-17|10:29:49.564|
+|C4660020T2015-04-17|08:29:49.564|
+|C2880020Y2015-04-17|11:29:40.564|
+|C3980040L2015-04-17|11:20:49.564|
+|C3340050L2015-04-17|11:10:49.564|
+|C4550060H2015-04-17|11:12:49.564|
+|B5660070U2015-04-17|11:15:49.564|
+|B2760080K2015-04-17|11:19:49.564|
+|B1780020X2015-04-17|11:20:49.564|
+|B3440060N2015-04-17|11:30:49.564|
+|A5880020J2015-04-17|11:22:49.564|
+|A2900040C2015-04-17|11:40:49.564|
+|A1450060J2015-04-17|11:40:49.564|
+|A7450090F2015-04-17|07:40:49.564|
++-------------------+------------+
+24/04/10 23:56:01 INFO InMemoryFileIndex: It took 0 ms to list leaf files for 1 paths.
+24/04/10 23:56:01 INFO InMemoryFileIndex: It took 0 ms to list leaf files for 1 paths.
+24/04/10 23:56:01 INFO FileSourceStrategy: Pushed Filters:
+24/04/10 23:56:01 INFO FileSourceStrategy: Post-Scan Filters: (length(trim(value#33, None)) > 0)
+24/04/10 23:56:01 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+24/04/10 23:56:01 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 348.9 KiB, free 2003.1 MiB)
+24/04/10 23:56:01 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 33.7 KiB, free 2003.1 MiB)
+24/04/10 23:56:01 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 192.168.1.7:51011 (size: 33.7 KiB, free: 2004.5 MiB)
+24/04/10 23:56:01 INFO SparkContext: Created broadcast 5 from csv at Main.java:30
+24/04/10 23:56:01 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+24/04/10 23:56:01 INFO SparkContext: Starting job: csv at Main.java:30
+24/04/10 23:56:01 INFO DAGScheduler: Got job 2 (csv at Main.java:30) with 1 output partitions
+24/04/10 23:56:01 INFO DAGScheduler: Final stage: ResultStage 2 (csv at Main.java:30)
+24/04/10 23:56:01 INFO DAGScheduler: Parents of final stage: List()
+24/04/10 23:56:01 INFO DAGScheduler: Missing parents: List()
+24/04/10 23:56:01 INFO DAGScheduler: Submitting ResultStage 2 (MapPartitionsRDD[16] at csv at Main.java:30), which has no missing parents
+24/04/10 23:56:01 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 12.0 KiB, free 2003.1 MiB)
+24/04/10 23:56:01 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 6.0 KiB, free 2003.1 MiB)
+24/04/10 23:56:01 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 192.168.1.7:51011 (size: 6.0 KiB, free: 2004.5 MiB)
+24/04/10 23:56:01 INFO SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1513
+24/04/10 23:56:01 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[16] at csv at Main.java:30) (first 15 tasks are for partitions Vector(0))
+24/04/10 23:56:01 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks resource profile 0
+24/04/10 23:56:01 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 2) (192.168.1.7, executor driver, partition 0, PROCESS_LOCAL, 7889 bytes) taskResourceAssignments Map()
+24/04/10 23:56:01 INFO Executor: Running task 0.0 in stage 2.0 (TID 2)
+24/04/10 23:56:01 INFO FileScanRDD: Reading File path: file:///Users/kd/git/spark/log-scraper/src/main/resources/inputfile2.csv, range: 0-693, partition values: [empty row]
+24/04/10 23:56:01 INFO Executor: Finished task 0.0 in stage 2.0 (TID 2). 1623 bytes result sent to driver
+24/04/10 23:56:01 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 2) in 7 ms on 192.168.1.7 (executor driver) (1/1)
+24/04/10 23:56:01 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool
+24/04/10 23:56:01 INFO DAGScheduler: ResultStage 2 (csv at Main.java:30) finished in 0.012 s
+24/04/10 23:56:01 INFO DAGScheduler: Job 2 is finished. Cancelling potential speculative or zombie tasks for this job
+24/04/10 23:56:01 INFO TaskSchedulerImpl: Killing all running tasks in stage 2: Stage finished
+24/04/10 23:56:01 INFO DAGScheduler: Job 2 finished: csv at Main.java:30, took 0.013493 s
+24/04/10 23:56:01 INFO FileSourceStrategy: Pushed Filters:
+24/04/10 23:56:01 INFO FileSourceStrategy: Post-Scan Filters:
+24/04/10 23:56:01 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+24/04/10 23:56:01 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 348.9 KiB, free 2002.7 MiB)
+24/04/10 23:56:01 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 33.7 KiB, free 2002.7 MiB)
+24/04/10 23:56:01 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 192.168.1.7:51011 (size: 33.7 KiB, free: 2004.4 MiB)
+24/04/10 23:56:01 INFO SparkContext: Created broadcast 7 from csv at Main.java:30
+24/04/10 23:56:01 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+24/04/10 23:56:01 INFO FileSourceStrategy: Pushed Filters:
+24/04/10 23:56:01 INFO FileSourceStrategy: Post-Scan Filters:
+24/04/10 23:56:01 INFO FileSourceStrategy: Output Data Schema: struct<Product: string,  Date: string>
+24/04/10 23:56:01 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 348.7 KiB, free 2002.4 MiB)
+24/04/10 23:56:01 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 33.7 KiB, free 2002.3 MiB)
+24/04/10 23:56:01 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 192.168.1.7:51011 (size: 33.7 KiB, free: 2004.4 MiB)
+24/04/10 23:56:01 INFO SparkContext: Created broadcast 8 from show at Main.java:31
+24/04/10 23:56:02 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+24/04/10 23:56:02 INFO SparkContext: Starting job: show at Main.java:31
+24/04/10 23:56:02 INFO DAGScheduler: Got job 3 (show at Main.java:31) with 1 output partitions
+24/04/10 23:56:02 INFO DAGScheduler: Final stage: ResultStage 3 (show at Main.java:31)
+24/04/10 23:56:02 INFO DAGScheduler: Parents of final stage: List()
+24/04/10 23:56:02 INFO DAGScheduler: Missing parents: List()
+24/04/10 23:56:02 INFO DAGScheduler: Submitting ResultStage 3 (MapPartitionsRDD[25] at show at Main.java:31), which has no missing parents
+24/04/10 23:56:02 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 10.5 KiB, free 2002.3 MiB)
+24/04/10 23:56:02 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 5.7 KiB, free 2002.3 MiB)
+24/04/10 23:56:02 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 192.168.1.7:51011 (size: 5.7 KiB, free: 2004.4 MiB)
+24/04/10 23:56:02 INFO SparkContext: Created broadcast 9 from broadcast at DAGScheduler.scala:1513
+24/04/10 23:56:02 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 3 (MapPartitionsRDD[25] at show at Main.java:31) (first 15 tasks are for partitions Vector(0))
+24/04/10 23:56:02 INFO TaskSchedulerImpl: Adding task set 3.0 with 1 tasks resource profile 0
+24/04/10 23:56:02 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 3) (192.168.1.7, executor driver, partition 0, PROCESS_LOCAL, 7889 bytes) taskResourceAssignments Map()
+24/04/10 23:56:02 INFO Executor: Running task 0.0 in stage 3.0 (TID 3)
+24/04/10 23:56:02 INFO FileScanRDD: Reading File path: file:///Users/kd/git/spark/log-scraper/src/main/resources/inputfile2.csv, range: 0-693, partition values: [empty row]
+24/04/10 23:56:02 INFO Executor: Finished task 0.0 in stage 3.0 (TID 3). 1844 bytes result sent to driver
+24/04/10 23:56:02 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 3) in 8 ms on 192.168.1.7 (executor driver) (1/1)
+24/04/10 23:56:02 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool
+24/04/10 23:56:02 INFO DAGScheduler: ResultStage 3 (show at Main.java:31) finished in 0.013 s
+24/04/10 23:56:02 INFO DAGScheduler: Job 3 is finished. Cancelling potential speculative or zombie tasks for this job
+24/04/10 23:56:02 INFO TaskSchedulerImpl: Killing all running tasks in stage 3: Stage finished
+24/04/10 23:56:02 INFO DAGScheduler: Job 3 finished: show at Main.java:31, took 0.014297 s
+24/04/10 23:56:02 INFO DAGScheduler: XYZ_DATASET: {Product}
++-------------------+-------------+
+|Product            | Date        |
++-------------------+-------------+
+|A3250050J2015-04-17| 11:29:49.544|
+|B4560050Y2015-04-17| 11:39:49.564|
+|C2300040L2015-04-17| 12:29:49.564|
+|A1230050M2015-04-17| 11:10:49.564|
+|A4760060N2015-04-17| 11:26:49.564|
+|B5880050W2015-04-17| 12:29:49.564|
+|B3230070R2015-04-17| 10:29:49.564|
+|C4660020T2015-04-17| 08:29:49.564|
+|C2880020Y2015-04-17| 11:29:40.564|
+|C3980040L2015-04-17| 11:20:49.564|
+|C3340050L2015-04-17| 11:10:49.564|
+|C4550060H2015-04-17| 11:12:49.564|
+|B5660070U2015-04-17| 11:15:49.564|
+|B2760080K2015-04-17| 11:19:49.564|
+|B1780020X2015-04-17| 11:20:49.564|
+|B3440060N2015-04-17| 11:30:49.564|
+|A5880020J2015-04-17| 11:22:49.564|
+|A2900040C2015-04-17| 11:40:49.564|
+|A1450060J2015-04-17| 11:40:49.564|
+|A7450090F2015-04-17| 07:40:49.564|
++-------------------+-------------+
+24/04/10 23:56:02 INFO SparkContext: Invoking stop() from shutdown hook
+24/04/10 23:56:02 INFO SparkUI: Stopped Spark web UI at http://192.168.1.7:4040
+24/04/10 23:56:02 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+24/04/10 23:56:02 INFO MemoryStore: MemoryStore cleared
+24/04/10 23:56:02 INFO BlockManager: BlockManager stopped
+24/04/10 23:56:02 INFO BlockManagerMaster: BlockManagerMaster stopped
+24/04/10 23:56:02 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+24/04/10 23:56:02 INFO SparkContext: Successfully stopped SparkContext
+24/04/10 23:56:02 INFO ShutdownHookManager: Shutdown hook called
+24/04/10 23:56:02 INFO ShutdownHookManager: Deleting directory /private/var/folders/5s/ftwr_7g946qftss3qrkmfnlc0000gn/T/spark-671ff8ff-cb3f-462d-a434-ea9ade15d961
+
+Process finished with exit code 0
