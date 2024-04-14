@@ -114,7 +114,7 @@ Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
 24/04/10 23:56:01 INFO CodeGenerator: Code generated in 8.623208 ms
 24/04/10 23:56:02 INFO DAGScheduler: XYZ_DATASET: {Item}
 +-------------------+------------+
-|Item               |Date        |
+|Item_ID            |Date        |
 +-------------------+------------+
 |A3250050J2015-04-17|11:29:49.544|
 |B4560050Y2015-04-17|11:39:49.564|
@@ -209,7 +209,7 @@ Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
 24/04/10 23:56:02 INFO DAGScheduler: Job 3 finished: show at Main.java:31, took 0.014297 s
 24/04/10 23:56:02 INFO DAGScheduler: XYZ_DATASET: {Product}
 +-------------------+-------------+
-|Product            | Date        |
+|Product_ID         | Date        |
 +-------------------+-------------+
 |A3250050J2015-04-17| 11:29:49.544|
 |B4560050Y2015-04-17| 11:39:49.564|
@@ -242,5 +242,30 @@ Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
 24/04/10 23:56:02 INFO SparkContext: Successfully stopped SparkContext
 24/04/10 23:56:02 INFO ShutdownHookManager: Shutdown hook called
 24/04/10 23:56:02 INFO ShutdownHookManager: Deleting directory /private/var/folders/5s/ftwr_7g946qftss3qrkmfnlc0000gn/T/spark-671ff8ff-cb3f-462d-a434-ea9ade15d961
+24/04/10 23:56:02 INFO DAGScheduler: XYZ_DATASET: {Location}
++-------------------+-------------+-------------+
+|Product            | Date        | Address     |
++-------------------+-------------+-------------+
+|A3250050J2015-04-17| 11:29:49.544| Singapore   |
+|B4560050Y2015-04-17| 11:39:49.564| Singapore   |
+|C2300040L2015-04-17| 12:29:49.564| Australia   |
+|A1230050M2015-04-17| 11:10:49.564| Singapore   |
+|A4760060N2015-04-17| 11:26:49.564| Singapore   |
+|B5880050W2015-04-17| 12:29:49.564| Singapore   |
+|B3230070R2015-04-17| 10:29:49.564| USA         |
+|C4660020T2015-04-17| 08:29:49.564| Singapore   |
+|C2880020Y2015-04-17| 11:29:40.564| Singapore   |
+|C3980040L2015-04-17| 11:20:49.564| Singapore   |
+|C3340050L2015-04-17| 11:10:49.564| Singapore   |
+|C4550060H2015-04-17| 11:12:49.564| UK          |
+|B5660070U2015-04-17| 11:15:49.564| Singapore   |
+|B2760080K2015-04-17| 11:19:49.564| Singapore   |
+|B1780020X2015-04-17| 11:20:49.564| Singapore   |
+|B3440060N2015-04-17| 11:30:49.564| Sri Lanka   |
+|A5880020J2015-04-17| 11:22:49.564| Singapore   |
+|A2900040C2015-04-17| 11:40:49.564| India       |
+|A1450060J2015-04-17| 11:40:49.564| Singapore   |
+|A7450090F2015-04-17| 07:40:49.564| Singapore   |
++-------------------+-------------+-------------+
 
 Process finished with exit code 0

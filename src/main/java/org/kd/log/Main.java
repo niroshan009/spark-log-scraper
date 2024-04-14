@@ -7,18 +7,26 @@ import org.apache.spark.sql.Encoders;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 import static org.apache.spark.sql.functions.col;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         System.out.println("Hello world!");
 
         Logger.getLogger("org.apache").setLevel(Level.WARN);
@@ -59,76 +67,81 @@ public class Main {
 
         // write to csv
 
-        filteredLogData
-
-                .coalesce(1)
-                .write()
-                .option("header", "false")
-                .mode("overwrite")
-                .csv("");
 
 
         AtomicReference<String> dtName = new AtomicReference<>("");
 
+        Pattern pattern = Pattern.compile("XYZ_DATASET: \\{(.*?)\\}");
         List<String> filtered = filteredLogData.coalesce(1).collectAsList()
                 .stream()
                 .map(e -> {
                     String row = e.getString(0);
                     StringBuilder formattedRow = new StringBuilder();
 
-                    String datasetName = "";
-                    Pattern pattern = Pattern.compile("XYZ_DATASET: \\{(.*?)\\}");
                     Matcher matcher = pattern.matcher(row);
 
                     if (matcher.find()) {
                         dtName.set(matcher.group(1));
-                        System.out.println(datasetName);
-                        return "==================================";
+                        System.out.println("******"+dtName.get());
+                        return "XYZ_DATASET: {"+dtName.get()+"}";
 
                     } else {
-                        return formattedRow.append(row)
+
+                        row = row.replaceFirst("\\|","");
+                        return formattedRow
+                                .append("XYZ_DATA_ENTRY: {")
                                 .append(dtName.get())
-                                .append("|").toString();
+                                .append("}")
+                                .append(row)
+                                .append(dtName.get())
+                                .toString();
 
                     }
                 })
                 .collect(Collectors.toList());
 
 
-        List<List<String>> groupedDs = new ArrayList<>();
-        AtomicReference<List<String>> innerRow = new AtomicReference<>();
+        Map<String,List<String>> groupedDs = new HashMap<>();
+
+        AtomicReference<String> datasetName = new AtomicReference<>();
+
 
         IntStream.range(0, filtered.size())
                 .forEach((e) -> {
 
                     String recrod = filtered.get(e);
 
-                    if(recrod.contains("==================================")) {
-                        if(innerRow.get() != null && innerRow.get().size() > 0) {
-                            groupedDs.add(innerRow.get());
-                        }
-                       innerRow.set(new ArrayList<>());
-                    } else {
-                        innerRow.get().add(recrod);
+                    Matcher matcher = pattern.matcher(recrod);
 
-                    } if(e == filtered.size()-1) {
-                        groupedDs.add(innerRow.get());
+                    if(matcher.find()) {
+
+                        if(!groupedDs.containsKey(matcher.group(1))) {
+                            groupedDs.put(matcher.group(1),new ArrayList<>());
+                        }
+                        datasetName.set(matcher.group(1));
+                    } else {
+
+                        String[] dataRecordSplit = recrod.split("XYZ_DATA_ENTRY: \\{(.*?)\\}");
+
+                        if(groupedDs.containsKey(datasetName.get())) {
+                            groupedDs.get(datasetName.get()).add(dataRecordSplit[1]);
+                        }
+
                     }
                 });
 
 
 
-        List<Dataset<Row>> finalDstoWriteToFiles = new ArrayList<>();
 
-        for(List entry : groupedDs) {
 
-            Dataset<Row> dataset = sparkSession.createDataset(entry, Encoders.STRING()).toDF("value");
-//            finalDstoWriteToFiles.add(dataset);
-//                    .write()
-//                    .format("csv")
-//                    .option("header", "false") // Include header in the CSV file
-//                    .mode("overwrite") // Overwrite the file if it already exists
-//                    .save("./src/main/resources/output");
+        // writing the the files
+
+        for(String datasetNmToSave : groupedDs.keySet()) {
+            Dataset<Row> dataset = sparkSession.createDataset(groupedDs.get(datasetNmToSave), Encoders.STRING()).toDF("value");
+            dataset.coalesce(1)
+                    .write()
+                    .mode("overwrite")
+                    .csv("./src/main/resources/out/generated/"+datasetNmToSave);
         }
 
 
@@ -143,10 +156,24 @@ public class Main {
 
 
 
+
         System.out.println("######");
 
 
     }
+
+
+
+
+
+
+
+//            finalDstoWriteToFiles.add(dataset);
+//                    .write()
+//                    .format("csv")
+//                    .option("header", "false") // Include header in the CSV file
+//                    .mode("overwrite") // Overwrite the file if it already exists
+//                    .save("./src/main/resources/output");
 
     // Function to split dataset based on the line delimiter
 
